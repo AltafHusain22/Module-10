@@ -19,13 +19,18 @@
     --heading-color: #562EFF;
     --title-color: #000;
     --by-text-color: #9F9F9F;
-    --star-color: # #FFC014;
+    --star-filled:  #FFC014;
+    --star-empty: #AEAEAE;
     --borad-color: #fff;
+    --author-color: #ED6B4F;
+    --duration-color: #FFE4E8;
 }
 
 body {
     background-color: var(--primary-color);
 }
+
+
 
 h2 {
     font-family: 'Poppins';
@@ -46,7 +51,7 @@ a {
     color: var(--heading-color);
 }
 
-.hr{
+.hr {
     width: 90%;
     margin: 0 auto;
     margin-top: 20px;
@@ -67,6 +72,8 @@ a {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .heading-title {
@@ -118,6 +125,105 @@ a {
     height: 117px;
 }
 
-.blog-details p{
+.blog-details p {
     padding-left: 15px;
+}
+
+/* ----------------
+    Blogs section style 
+-------------------*/
+
+.course-area {
+    background-color: var(--borad-color);
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+
+.course-contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-right: 50px;
+}
+
+.course-card {
+    padding: 20px 0px 50px 20px;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.course {
+    justify-content: center;
+    padding-left: 50px;
+
+}
+
+.course-info img {
+    width: 14rem;
+    height: auto;
+}
+
+.course-title {
+    margin-left: 0;
+}
+
+.course_author {
+    margin-bottom: 20px;
+    color: var(--author-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.raiting_and_durations {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4px;
+    margin-top: 10px;
+
+}
+
+.raiting {
+    margin-right: 10px;
+}
+
+.filled{
+    color: var(--star-filled);
+    font-size: 14px;
+}
+
+.empty {
+    color: var(--star-empty);
+    font-size: 14px;
+}
+
+
+.duration {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4px;
+    background: var(--duration-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.duration i, p {
+    color: var(--author-color);
 }
